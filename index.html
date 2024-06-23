@@ -52,15 +52,25 @@
         alt="close-btn"
       />
       <h2 class="modal__heading">Войти в систему</h2>
-      <input type="text" class="modal__email" placeholder="Email/Телефон" />
-      <input type="password" class="modal__password" placeholder="Пароль" />
+      <input
+        type="text"
+        class="modal__email"
+        placeholder="Email/Телефон"
+        id="email"
+      />
+      <input
+        type="password"
+        class="modal__password"
+        placeholder="Пароль"
+        id="password"
+      />
       <section class="modal__remember-password">
         <input type="checkbox" class="modal__check" id="check" />
         <span class="checkmark"></span>
         <label for="check">Запомнить пароль</label>
       </section>
       <a href="" class="modal__reset">Восстановить</a>
-      <button class="modal__signin">Войти</button>
+      <button class="modal__signin" id="signin">Войти</button>
       <button class="modal__signup">Зарегестрироваться</button>
     </section>
 
