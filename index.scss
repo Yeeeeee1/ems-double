@@ -79,6 +79,13 @@
   }
 }
 
+.modal {
+  position: absolute;
+  width: 500px;
+  height: 575px;
+  background-color: #f0f4fc;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     height: 591px;
@@ -130,13 +137,44 @@
 }
 
 @media only screen and (max-width: 375px) {
-  &__img-wrapper {
-    margin-top: 12px;
-    width: 100%;
+  .container {
+    height: 482px;
+    margin: 14px 24px;
 
-    & img {
-      max-width: 328px;
-      height: 220px;
+    &__heading {
+      font-size: 17px;
+    }
+
+    &__text-section {
+      margin-top: 10px;
+      max-width: 375px;
+      padding: 0;
+    }
+
+    &__text {
+      margin-top: 17px;
+      width: 279px;
+      font-size: 13px;
+    }
+
+    &__button {
+      margin-top: 19px;
+      width: 279px;
+
+      & img {
+        margin-right: 9px;
+      }
+    }
+
+    &__img-wrapper {
+      margin-top: 45px;
+      width: 100%;
+
+      & img {
+        max-width: 328px;
+        height: 220px;
+        height: 167px;
+      }
     }
   }
 }
