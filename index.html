@@ -21,6 +21,7 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
+    <section class="overlay"></section>
     <main>
       <section class="wrapper">
         <section class="container">
@@ -43,7 +44,24 @@
       </section>
     </main>
 
-    <section class="modal"></section>
+    <section class="modal">
+      <img
+        class="modal__close-button"
+        src="./img/close1.png"
+        alt="close-button"
+      />
+      <h2 class="modal__heading">Войти в систему</h2>
+      <input type="text" class="modal__email" placeholder="Email/Телефон" />
+      <input type="password" class="modal__password" placeholder="Пароль" />
+      <section class="modal__remember-password">
+        <input type="checkbox" class="modal__check" id="check" />
+        <span class="checkmark"></span>
+        <label for="check">Запомнить пароль</label>
+      </section>
+      <a href="" class="modal__reset">Восстановить</a>
+      <button class="modal__signin">Войти</button>
+      <button class="modal__signup">Зарегестрироваться</button>
+    </section>
 
     <script src="main.js"></script>
   </body>

@@ -97,11 +97,222 @@
   margin-right: 12px;
 }
 
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1;
+  opacity: 0.5;
+}
+
 .modal {
   position: absolute;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 20%;
+  text-align: center;
   width: 500px;
   height: 575px;
   background-color: #f0f4fc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal__close-button {
+  width: 52px;
+  cursor: pointer;
+  margin-top: 24px;
+  margin-left: 400px;
+}
+
+.modal__heading {
+  font-size: 24px;
+  font-weight: 500;
+  color: #323232;
+  margin-top: 4px;
+  margin-right: 262px;
+}
+
+.modal__reset {
+  text-decoration: none;
+  color: #244c98;
+  font-weight: 500;
+  font-size: 20px;
+  margin-right: 316px;
+  margin-top: 26px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.modal__reset:hover {
+  color: #183366;
+}
+
+.modal__remember-password {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 23px;
+}
+
+.modal__remember-password label {
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 17px;
+  font-weight: 400;
+}
+
+.modal__email, .modal__password {
+  text-indent: 25px;
+  width: 452px;
+  height: 73px;
+  color: #1f4284;
+  border-radius: 10px;
+  background-color: #d7e2f6;
+  border: none;
+}
+
+.modal__email::-webkit-input-placeholder, .modal__password::-webkit-input-placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1f4284;
+  text-indent: 25px;
+}
+
+.modal__email:-ms-input-placeholder, .modal__password:-ms-input-placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1f4284;
+  text-indent: 25px;
+}
+
+.modal__email::-ms-input-placeholder, .modal__password::-ms-input-placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1f4284;
+  text-indent: 25px;
+}
+
+.modal__email::placeholder, .modal__password::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1f4284;
+  text-indent: 25px;
+}
+
+.modal__email:focus, .modal__password:focus {
+  outline: 2px solid #1f4284;
+}
+
+.modal__check {
+  width: 18px;
+  height: 18px;
+  z-index: 4;
+  margin-left: 27px;
+  margin-top: 4px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.modal__check + label {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border: 2px solid #323232 !important;
+  background: #d7e2f6 !important;
+  margin-left: 27px;
+  margin-top: 4px;
+}
+
+.modal__email {
+  margin-top: 18px;
+}
+
+.modal__password {
+  margin-top: 4px;
+}
+
+.modal__signin, .modal__signup {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  outline: 0;
+  border: 1px solid #244c98;
+  width: 452px;
+  height: 65px;
+  background-color: #244c98;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.modal__signin {
+  margin-top: 36px;
+}
+
+.modal__signin:hover {
+  background-color: #1c3a72;
+}
+
+.modal__signup {
+  margin-top: 4px;
+  background-color: transparent;
+  color: #244c98;
+}
+
+.modal__signup:hover {
+  background-color: #244c98;
+  color: #fff;
+}
+
+.checkmark {
+  position: absolute;
+  top: 307px;
+  left: 26px;
+  height: 16px;
+  width: 16px;
+  border-radius: 3px;
+  border: 2px solid #323232;
+  background-color: transparent;
+}
+
+input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkmark:after {
+  left: 5px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 @media only screen and (max-width: 768px) {
