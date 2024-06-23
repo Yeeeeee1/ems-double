@@ -279,28 +279,31 @@ input:checked ~ .checkmark:after {
 
 @media only screen and (max-width: 768px) {
   .container {
-    height: 591px;
-    margin: 24px 40px;
+    height: 586px;
+    margin: 24px 24px;
     flex-direction: column;
 
     &__text-section {
       padding: 12px;
-      margin-left: 50px;
       width: 100%;
+      margin-left: 0;
     }
 
     &__heading {
+      margin-left: 24px;
       margin-top: 15px;
       font-size: 20px;
     }
 
     &__text {
+      margin-left: 24px;
       margin-top: 22px;
       max-width: 641px;
       font-size: 15px;
     }
 
     &__button {
+      margin-left: 24px;
       margin-top: 22px;
       width: 261px;
       height: 56px;
@@ -320,6 +323,8 @@ input:checked ~ .checkmark:after {
       width: 100%;
 
       & img {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
         max-width: 720px;
         height: 360px;
       }
