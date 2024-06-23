@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>EMS Double</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <section class="overlay"></section>
+    <main>
+      <section class="wrapper">
+        <section class="container">
+          <section class="container__text-section">
+            <h1 class="container__heading">Демо-версия</h1>
+            <p class="container__text">
+              За 18 лет деятельности было реализовано более 500 крупных, а так
+              же, не менее 2500 средних и малых проектов. Используя знания и
+              накопленный опыт мы можем предложить
+            </p>
+            <button class="container__button" id="openBtn">
+              <p>Попробовать бесплатно</p>
+              <img src="./img/button1.png" alt="arrow-button" />
+            </button>
+          </section>
+          <section class="container__img-wrapper">
+            <img src="./img/image1.png" alt="main-frame-pic" />
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <section class="modal">
+      <img
+        class="modal__close-button"
+        id="closeBtn"
+        src="./img/close1.png"
+        alt="close-btn"
+      />
+      <h2 class="modal__heading">Войти в систему</h2>
+      <input
+        type="text"
+        class="modal__email"
+        placeholder="Email/Телефон"
+        id="email"
+      />
+      <input
+        type="password"
+        class="modal__password"
+        placeholder="Пароль"
+        id="password"
+      />
+      <section class="modal__remember-password">
+        <input type="checkbox" class="modal__check" id="check" />
+        <span class="checkmark"></span>
+        <label for="check">Запомнить пароль</label>
+      </section>
+      <a href="" class="modal__reset">Восстановить</a>
+      <button class="modal__signin" id="signin">Войти</button>
+      <button class="modal__signup">Зарегестрироваться</button>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
